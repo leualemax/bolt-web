@@ -11,7 +11,8 @@ var gulp = require('gulp'),
   server = require('gulp-server-livereload'),
   inquirer = require("inquirer"),
   rename = require("gulp-rename"),
-  replace = require('gulp-replace');
+  replace = require('gulp-replace'),
+  ghPages = require('gulp-gh-pages');
 
 
 gulp.task('styles', function () {
@@ -31,6 +32,10 @@ gulp.task('styles', function () {
     });
 });
 
+gulp.task('deploy-ghpages', function() {
+  return gulp.src('./www/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task('watch', function () {
   gulp.watch(['./scss/**/*.scss'], ['styles']);
