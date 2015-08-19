@@ -6,17 +6,17 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #333;
 }
 
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-primary-outline,
+.btn-primary-outline:hover,
+.btn-primary-outline:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: rgba(#333 , 0.1);
+  border: .05rem solid #333;
 }
 
 
@@ -26,12 +26,26 @@ a:hover {
 
 html,
 body {
-  background-color: darken(#efe17e , 10%);
+  background-color:#EFD26C;
 }
 body {
-  color: #fff;
+  color: #333;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+.code{
+  background-color:#333;
+  border-radius:5px;
+  width:100%;
+  padding:20px;
+  p{
+    color:#fff;
+    font-weight:100;
+    text-align:left;
+    margin-bottom:0px;
+  }
+
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -83,8 +97,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #333;
+  border-bottom-color: #333;
 }
 
 @media (min-width: 48em) {
@@ -115,7 +129,7 @@ body {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
+  color: #333;
 }
 
 
