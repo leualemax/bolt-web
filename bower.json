@@ -1,0 +1,20 @@
+{
+  "name": "bolt-web",
+  "version": "0.1.0",
+  "authors": [
+    "Leonardo <leualemax@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4-dev",
+    "angular": "~1.4.4",
+    "angular-ui-router": "~0.2.15",
+    "components-font-awesome": "~4.4.0"
+  }
+}
